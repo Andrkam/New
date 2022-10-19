@@ -10,7 +10,7 @@ def draw_board():
 def take_input(token):
     while True:
         value = input('Куда поставите: '+token+'? ')
-        if not (value in "123456789") or (len(value) =! 1):
+        if not (value in "123456789") or len(value) != 1:
             print('Ошибка ввода, введите цифру от 1 до 9')
             continue
         value = int(value)
